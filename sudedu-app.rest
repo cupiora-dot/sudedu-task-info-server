@@ -1,0 +1,30 @@
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username": "admin@admin.com",
+    "password": "admin"
+}
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin@admin.com",
+    "password": "admin"
+}
+
+###
+POST http://localhost:5000/data
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQzMTUwNDU2LCJleHAiOjE3NDMyMzY4NTZ9.DQA9pSRaFOKyJ1LjR6uFH7XUikX06ZhDeNtbj7eAZfg
+Content-Type: application/json
+
+{
+    "data": "faassfas"
+}
+
+###
+GET http://localhost:5000/data
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQzMTUwNDU2LCJleHAiOjE3NDMyMzY4NTZ9.DQA9pSRaFOKyJ1LjR6uFH7XUikX06ZhDeNtbj7eAZfg
+
